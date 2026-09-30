@@ -1,3 +1,6 @@
 /contents/
 /contents-complete.zip
-
+/.work/
+/dist/
+__pycache__/
+*.pyc
