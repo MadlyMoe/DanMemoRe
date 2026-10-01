@@ -22,10 +22,17 @@ With MuMu running, open a second terminal and install/launch it:
 python tools/offline_client.py install
 ```
 
-Downloaded content is served directly from `contents/`. Unknown API actions fail
-closed with HTTP 503 and are recorded without header values or request bodies in
-`.work/requests.jsonl`. That route evidence is the input for implementing the
-login and user-data replies; the current server does not fake successful gameplay.
+Downloaded content is served directly from `contents/`. Static analysis of the
+ARM client established the WFS response headers, JSON login fields, dedicated
+MessagePack `user_data/pull` path, and an unencrypted response mode. The local
+server now handles `matching_user/game_user_id`, `user/login`,
+`user_data/confirm`, and `user_data/pull` without relying on dead-server traffic.
+
+The user-data reply is currently an empty, valid MessagePack envelope. It is a
+bootstrap boundary, not a claim of playable gameplay; the next step is recovering
+the client's required table set and constructing an original-data starter profile.
+Unknown actions still fail closed with HTTP 503 and are recorded without header
+values or request bodies in `.work/requests.jsonl`.
 
 Generated APKs, signing material, request logs, and the 14 GB content archive are
 intentionally excluded from Git.

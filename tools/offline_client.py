@@ -31,6 +31,15 @@ ORIGINAL_PACKAGE = "com.eu.danmemo"
 PRIVATE_PACKAGE = "com.eu.danmore"  # Same width keeps binary resource offsets stable.
 PORT = 28766
 ENDPOINT = f"http://127.0.0.1:{PORT}"
+LOCAL_USER_ID = 1000000001
+LOCAL_AES_IV = "DanMemoReLocalIV"
+LOCAL_TOKEN = "00000000000000000000000000000001"
+API_ACTIONS = (
+    "matching_user/game_user_id",
+    "user/login",
+    "user_data/confirm",
+    "user_data/pull",
+)
 URL_PATCHES = {
     b"https://api-danmemo-eu.wrightflyer.net": f"{ENDPOINT}/api".encode(),
     b"https://cdn-danmemo.akamaized.net/eu": f"{ENDPOINT}/content".encode(),
@@ -359,6 +368,38 @@ def content_path(request_path: str) -> Path | None:
     return candidate if candidate == root or root in candidate.parents else None
 
 
+def api_action(request_path: str) -> str | None:
+    path = urlsplit(request_path).path.rstrip("/")
+    return next((action for action in API_ACTIONS if path.endswith("/" + action)), None)
+
+
+def api_response(action: str) -> tuple[str, bytes]:
+    if action == "matching_user/game_user_id":
+        value = {"code": 0, "game_user_id": LOCAL_USER_ID, "aesIv": LOCAL_AES_IV}
+    elif action == "user/login":
+        value = {
+            "code": 0,
+            "apiUrl": f"{ENDPOINT}/api",
+            "cdnUrl": f"{ENDPOINT}/content",
+            "game_user_id": LOCAL_USER_ID,
+            "aesIv": LOCAL_AES_IV,
+            "warningId": 0,
+            "warningTitle": "",
+            "warningMessage": "",
+            "agreePolicyVersionUpdate": False,
+            "data": {},
+            "dataTokens": {},
+        }
+    elif action == "user_data/confirm":
+        value = {"code": 0, "dataTokens": {}, "migrators": [], "operations": []}
+    elif action == "user_data/pull":
+        # Fixed MessagePack for {data:{}, dataTokens:{}, recovery:false}.
+        return "application/x-msgpack", b"\x83\xa4data\x80\xaadataTokens\x80\xa8recovery\xc2"
+    else:
+        raise ValueError(f"Unsupported API action: {action}")
+    return "application/json", json.dumps(value, separators=(",", ":")).encode()
+
+
 class LocalHandler(http.server.BaseHTTPRequestHandler):
     server_version = "DanMemoRe/0"
 
@@ -415,7 +456,38 @@ class LocalHandler(http.server.BaseHTTPRequestHandler):
             return
         body = self.rfile.read(length)
         self.record(body)
+        if action := api_action(self.path):
+            self.serve_api(action, body)
+            return
         self.unknown()
+
+    def serve_api(self, action: str, request_body: bytes) -> None:
+        content_type, body = api_response(action)
+        now = str(int(time.time()))
+        request_id = self.headers.get("X-KMS-REQUEST-ID", "0")
+        sequence = self.headers.get("X-KMS-REQUEST-SEQUENCE", "0")
+        body_hash = self.headers.get(
+            "X-KMS-REQUEST-BODY-HASH", hashlib.md5(request_body).hexdigest()
+        )
+        self.send_response(200)
+        for name, value in {
+            "Content-Type": content_type,
+            "Content-Length": str(len(body)),
+            "Cache-Control": "no-store",
+            "X-KMS-ENCRYPTION": "0",
+            "X-KMS-REQUEST-ID": request_id,
+            "X-KMS-REQUEST-SEQUENCE": sequence,
+            "X-KMS-REQUEST-BODY-HASH": body_hash,
+            "X-KMS-ONE-TIME-TOKEN": LOCAL_TOKEN,
+            "X-KMS-USER": str(LOCAL_USER_ID),
+            "X-KMS-SERVER-RESPONSE-CODE": "0",
+            "X-KMS-SERVER-TIMESTAMP": now,
+            "X-KMS-ACCEPT-TIMESTAMP": now,
+            "X-KMS-SERVER-VERSION": "DanMemoRe/1",
+        }.items():
+            self.send_header(name, value)
+        self.end_headers()
+        self.wfile.write(body)
 
     def unknown(self) -> None:
         body = b'{"error":"unimplemented local route"}\n'
@@ -471,12 +543,19 @@ def self_test() -> None:
     assert patch_c_string(b"before-old-after", b"old", b"x") == b"before-x\0\0-after"
     assert content_path("/content/1/version.manifest") == (CONTENTS / "1/version.manifest").resolve()
     assert content_path("/content/../README.md") is None
+    assert api_action("/api/game_client/user/login") == "user/login"
+    assert api_action("/api/not-implemented") is None
+    content_type, body = api_response("user/login")
+    assert content_type == "application/json"
+    assert json.loads(body)["game_user_id"] == LOCAL_USER_ID
+    content_type, body = api_response("user_data/pull")
+    assert content_type == "application/x-msgpack" and body.startswith(b"\x83\xa4data\x80")
     with zipfile.ZipFile(SOURCE_APK) as archive:
         manifest = patch_manifest(archive.read("AndroidManifest.xml"))
     assert PRIVATE_PACKAGE.encode("utf-16le") in manifest
     assert ORIGINAL_PACKAGE.encode("utf-16le") not in manifest
     xml_chunks(manifest)
-    print("PASS: fixed-width routing, safe content paths, and binary manifest patch")
+    print("PASS: APK isolation, safe paths, and static-derived plaintext bootstrap")
 
 
 def main() -> None:
