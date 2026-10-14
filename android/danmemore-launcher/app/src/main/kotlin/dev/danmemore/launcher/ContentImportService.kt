@@ -99,7 +99,7 @@ private class ContentImporter(private val context: Context) {
     private data class ExpectedAsset(val size: Long, val md5: String)
 
     private val expected = LinkedHashMap<String, ExpectedAsset>()
-    private val verified = HashSet<String>()
+    private val resolved = HashMap<String, ExpectedAsset>()
     private val archiveFiles = HashSet<String>()
     private val roots = HashSet<String>()
     private var expandedBytes = 0L
@@ -143,13 +143,13 @@ private class ContentImporter(private val context: Context) {
 
             progress("Content import: applying offline manifests and banner artwork")
             writePatches(staging)
-            val missingAssets = expected.keys.filterNot(verified::contains)
+            val missingAssets = expected.keys.filterNot(resolved::containsKey)
             check(missingAssets.isEmpty()) {
                 "archive is incomplete: ${missingAssets.size} manifest assets are missing (first: ${missingAssets.first()})"
             }
             File(staging, MARKER).writeText(
                 JSONObject().put("schemaVersion", 1).put("archiveFiles", fileCount)
-                    .put("expandedBytes", expandedBytes).put("verifiedAssets", verified.size)
+                    .put("expandedBytes", expandedBytes).put("verifiedAssets", resolved.size)
                     .put("importedAt", Instant.now().toString()).toString() + "\n",
                 Charsets.UTF_8,
             )
@@ -197,6 +197,7 @@ private class ContentImporter(private val context: Context) {
         progress("Content import: copying the selected ZIP into private storage")
         var copied = 0L
         var lastCopyProgress = 0L
+        val sha256 = MessageDigest.getInstance("SHA-256")
         context.contentResolver.openInputStream(uri)?.buffered(COPY_BUFFER_BYTES)?.use { source ->
             BufferedOutputStream(FileOutputStream(destination), COPY_BUFFER_BYTES).use { output ->
                 val buffer = ByteArray(COPY_BUFFER_BYTES)
@@ -206,6 +207,7 @@ private class ContentImporter(private val context: Context) {
                     copied = Math.addExact(copied, count.toLong())
                     check(copied <= MAX_ARCHIVE_BYTES) { "selected ZIP is larger than the supported payload size" }
                     output.write(buffer, 0, count)
+                    sha256.update(buffer, 0, count)
                     val now = android.os.SystemClock.elapsedRealtime()
                     if (now - lastCopyProgress >= PROGRESS_INTERVAL_MS) {
                         lastCopyProgress = now
@@ -215,6 +217,12 @@ private class ContentImporter(private val context: Context) {
             }
         } ?: error("Android could not open the selected ZIP")
         check(copied > 0L && destination.length() == copied) { "selected ZIP could not be staged completely" }
+        if (BuildConfig.STRICT_CONTENT_MANIFEST) {
+            check(copied == EXPECTED_ARCHIVE_BYTES) { "selected ZIP has the wrong size for the 15.1.0 payload" }
+            check(sha256.digest().toHex() == EXPECTED_ARCHIVE_SHA256) {
+                "selected ZIP failed the 15.1.0 payload checksum"
+            }
+        }
     }
 
     private fun extractArchive(archive: File, staging: File) {
@@ -260,9 +268,6 @@ private class ContentImporter(private val context: Context) {
                 size = Math.addExact(size, count.toLong())
                 expandedBytes = Math.addExact(expandedBytes, count.toLong())
                 check(expandedBytes <= MAX_EXPANDED_BYTES) { "archive expands beyond the supported content size" }
-                if (expectedAsset != null && path !in PATCHED_PATHS) check(size <= expectedAsset.size) {
-                    "asset is larger than its original manifest record: $path"
-                }
                 destination.write(buffer, 0, count)
                 digest?.update(buffer, 0, count)
                 crc.update(buffer, 0, count)
@@ -273,20 +278,36 @@ private class ContentImporter(private val context: Context) {
         check(entry.crc < 0L || crc.value == entry.crc) { "asset failed ZIP CRC verification: $path" }
         if (expectedAsset != null && path !in PATCHED_PATHS) {
             val md5 = digest!!.digest().toHex()
-            check(size == expectedAsset.size && md5 == expectedAsset.md5) { "asset failed original manifest verification: $path" }
-            verified += path
+            resolved[path] = ExpectedAsset(size, md5)
         }
         fileCount = Math.addExact(fileCount, 1L)
         reportProgress(path, force = fileCount % 250L == 0L)
     }
 
     private fun writePatches(staging: File) {
-        for (phase in listOf("1", "3"))
-            writeAsset(staging, "runtime/manifests/project.manifest.$phase", "$phase/project.manifest", verify = false)
         writeAsset(staging, "runtime/manifests/resources/gacha/lottery.enc", "1/master/divide_enc/lottery.enc")
         writeAsset(staging, "runtime/manifests/resources/gacha/lotteryPickup.enc", "1/master/divide_enc/lotteryPickup.enc")
         writeAsset(staging, "runtime/manifests/resources/shop/shopProduct.enc", "1/master/divide_enc/shopProduct.enc")
         writeAssetTree(staging, "runtime/manifests/resources/gacha/background", "3/files/lottery/background")
+        writeResolvedProjectManifests(staging)
+    }
+
+    private fun writeResolvedProjectManifests(staging: File) {
+        for (phase in 1..8) {
+            val manifest = context.assets.open("runtime/manifests/project.manifest.$phase")
+                .bufferedReader(Charsets.UTF_8).use { JSONObject(it.readText()) }
+            val assets = manifest.getJSONObject("assets")
+            val keys = assets.keys()
+            while (keys.hasNext()) {
+                val relative = normalizeRelative(keys.next())
+                val actual = resolved["$phase/$relative"]
+                    ?: error("cannot resolve local manifest asset: $phase/$relative")
+                assets.getJSONObject(relative).put("size", actual.size).put("md5", actual.md5)
+            }
+            val output = safeFile(staging, "$phase/project.manifest")
+            output.parentFile?.mkdirs()
+            output.writeText(manifest.toString(), Charsets.UTF_8)
+        }
     }
 
     private fun writeAssetTree(staging: File, assetPath: String, targetPath: String) {
@@ -324,10 +345,11 @@ private class ContentImporter(private val context: Context) {
             }
         }
         if (expectedAsset != null) {
-            check(size == expectedAsset.size && digest.digest().toHex() == expectedAsset.md5) {
+            val md5 = digest.digest().toHex()
+            check(size == expectedAsset.size && md5 == expectedAsset.md5) {
                 "bundled offline patch failed manifest verification: $normalized"
             }
-            verified += normalized
+            resolved[normalized] = ExpectedAsset(size, md5)
         }
     }
 
@@ -383,6 +405,8 @@ private class ContentImporter(private val context: Context) {
         private const val MAX_ARCHIVE_BYTES = 20L * 1024L * 1024L * 1024L
         private const val MAX_ARCHIVE_ENTRIES = 500_000L
         private const val MAX_EXPANDED_BYTES = 32L * 1024L * 1024L * 1024L
+        private const val EXPECTED_ARCHIVE_BYTES = 14_405_277_851L
+        private const val EXPECTED_ARCHIVE_SHA256 = "c5dc2e890011d3dc50e51525b74702544fd819fbeddfaf673be496d31386c67f"
         private val PATCHED_PATHS = setOf(
             "1/master/divide_enc/lottery.enc",
             "1/master/divide_enc/lotteryPickup.enc",
