@@ -143,10 +143,6 @@ private class ContentImporter(private val context: Context) {
 
             progress("Content import: applying offline manifests and banner artwork")
             writePatches(staging)
-            val missingAssets = expected.keys.filterNot(resolved::containsKey)
-            check(missingAssets.isEmpty()) {
-                "archive is incomplete: ${missingAssets.size} manifest assets are missing (first: ${missingAssets.first()})"
-            }
             File(staging, MARKER).writeText(
                 JSONObject().put("schemaVersion", 1).put("archiveFiles", fileCount)
                     .put("expandedBytes", expandedBytes).put("verifiedAssets", resolved.size)
@@ -298,11 +294,13 @@ private class ContentImporter(private val context: Context) {
                 .bufferedReader(Charsets.UTF_8).use { JSONObject(it.readText()) }
             val assets = manifest.getJSONObject("assets")
             val keys = assets.keys()
-            while (keys.hasNext()) {
-                val relative = normalizeRelative(keys.next())
+            val rawKeys = ArrayList<String>(assets.length())
+            while (keys.hasNext()) rawKeys += keys.next()
+            for (raw in rawKeys) {
+                val relative = normalizeRelative(raw)
                 val actual = resolved["$phase/$relative"]
-                    ?: error("cannot resolve local manifest asset: $phase/$relative")
-                assets.getJSONObject(relative).put("size", actual.size).put("md5", actual.md5)
+                if (actual == null) assets.remove(raw)
+                else assets.getJSONObject(raw).put("size", actual.size).put("md5", actual.md5)
             }
             val output = safeFile(staging, "$phase/project.manifest")
             output.parentFile?.mkdirs()

@@ -286,7 +286,7 @@ private val Navy = Color(0xff0d151e)
             confirmButton = { TextButton(onClick = { reset = false; action("reset", "") }) { Text("Reset") } },
             dismissButton = { TextButton(onClick = { reset = false }) { Text("Cancel") } })
         if (importContent) AlertDialog(onDismissRequest = { importContent = false }, title = { Text("Import preserved assets?") },
-            text = { Text("Select contents-complete.zip. DanMemoRe will extract it into a private staging cache, verify every original manifest asset, apply the offline content overlays, and activate it only when all eight phases are complete. The game downloads from that localhost cache itself; no root access is needed and saves are left untouched.") },
+            text = { Text("Select the preserved 15.1.0 content ZIP. DanMemoRe will verify the exact payload checksum, extract it into a private staging cache, verify every extracted file, apply the offline content overlays, and activate it only when all eight phases are complete. The game downloads from that localhost cache itself; no root access is needed and saves are left untouched.") },
             confirmButton = { TextButton(onClick = { importContent = false; contentPicker.launch(arrayOf("application/zip", "application/x-zip-compressed", "application/octet-stream")) }) { Text("Choose ZIP") } },
             dismissButton = { TextButton(onClick = { importContent = false }) { Text("Cancel") } })
     }
