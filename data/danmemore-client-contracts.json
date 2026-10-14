@@ -1,0 +1,3064 @@
+{
+  "clientVersion": "15.1.0",
+  "nativeSha256": "e49a8cc7991f8946365a28aebad605ce566b034826dd4b34a982ab18b38303b3",
+  "routes": {
+    "achievement/complete": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "achievement/complete",
+        "achievementId",
+        "achievementIds",
+        "completedAt"
+      ],
+      "wrappers": [
+        [
+          22063508,
+          22064844
+        ],
+        [
+          25093940,
+          25095276
+        ],
+        [
+          28424780,
+          28426004
+        ]
+      ]
+    },
+    "achievement/familia/add": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "achievement/familia/add",
+        "recordType"
+      ],
+      "wrappers": [
+        [
+          39097220,
+          39097728
+        ]
+      ]
+    },
+    "achievement/familia/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "achievement/familia/get"
+      ],
+      "wrappers": [
+        [
+          37107700,
+          37108528
+        ]
+      ]
+    },
+    "ad/scratch/draw": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "ad/scratch/draw",
+        "adScratchId",
+        "advertisementType",
+        "epositoryC1EvE3$_0",
+        "position"
+      ],
+      "wrappers": [
+        [
+          37686228,
+          37687460
+        ]
+      ]
+    },
+    "ad/view/complete": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "ad/view/complete",
+        "type"
+      ],
+      "wrappers": [
+        [
+          30245404,
+          30246056
+        ],
+        [
+          30771608,
+          30772288
+        ]
+      ]
+    },
+    "adventure/stage/complete": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "adventure/stage/complete",
+        "currency.valis",
+        "secretMissionCompleted"
+      ],
+      "wrappers": [
+        [
+          30385148,
+          30389408
+        ],
+        [
+          38218732,
+          38221572
+        ]
+      ],
+      "stageDispatch": {
+        "table": 69948760,
+        "xref": 38220212,
+        "adventureTypes": [
+          13,
+          14,
+          16,
+          17,
+          18,
+          21,
+          23,
+          24,
+          25
+        ]
+      }
+    },
+    "battle/continue": {
+      "modes": [
+        "empty"
+      ],
+      "strings": [
+        "battle/continue"
+      ],
+      "wrappers": [
+        [
+          39691804,
+          39692416
+        ]
+      ]
+    },
+    "casino/ranking/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "casino/ranking/get"
+      ],
+      "wrappers": [
+        [
+          23659332,
+          23659772
+        ]
+      ]
+    },
+    "casino/ranking/update": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "casino/ranking/update",
+        "medalAmount",
+        "medalUpdatedAt",
+        "reason"
+      ],
+      "wrappers": [
+        [
+          37747592,
+          37748640
+        ]
+      ]
+    },
+    "character/friendship/complete": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "character/friendship/complete",
+        "characterId",
+        "friendship",
+        "friendshipLv",
+        "friendshipStates",
+        "itemAmount",
+        "itemId",
+        "system_flag.argo.town_friendship_up_point",
+        "userHeroType"
+      ],
+      "wrappers": [
+        [
+          22897472,
+          22899796
+        ],
+        [
+          35717268,
+          35719584
+        ]
+      ]
+    },
+    "currency/hard/consume": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "consumeId",
+        "currency/hard/consume",
+        "detailId",
+        "payload"
+      ],
+      "wrappers": [
+        [
+          39694388,
+          39695208
+        ],
+        [
+          39695208,
+          39696276
+        ],
+        [
+          39696276,
+          39697504
+        ]
+      ]
+    },
+    "dress_point/complete": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "aftDpLv",
+        "befDpLv",
+        "dpStates",
+        "dress_point/complete",
+        "itemAmount",
+        "itemId",
+        "pcId"
+      ],
+      "wrappers": [
+        [
+          39294940,
+          39296828
+        ]
+      ]
+    },
+    "dungeon/ticket/issue": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "dungeon/ticket/issue",
+        "id",
+        "ty_item"
+      ],
+      "wrappers": [
+        [
+          39692420,
+          39693240
+        ]
+      ]
+    },
+    "election/vote": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "election/vote",
+        "electionId",
+        "voteCount",
+        "voteId"
+      ],
+      "wrappers": [
+        [
+          36839976,
+          36841256
+        ]
+      ]
+    },
+    "element_event/ranking/around/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "elementEventStageId",
+        "element_event/ranking/around/get"
+      ],
+      "wrappers": [
+        [
+          39663756,
+          39665004
+        ]
+      ]
+    },
+    "element_event/ranking/character/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "elementEventStageId",
+        "element_event/ranking/character/get"
+      ],
+      "wrappers": [
+        [
+          27640684,
+          27641556
+        ]
+      ]
+    },
+    "element_event/ranking/top/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "elementEventStageId",
+        "element_event/ranking/top/get"
+      ],
+      "wrappers": [
+        [
+          39662092,
+          39663340
+        ]
+      ]
+    },
+    "element_event/stage/complete": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "adventure/stage/complete",
+        "secretMissionCompleted"
+      ],
+      "wrappers": [
+        [
+          38218732,
+          38221572
+        ]
+      ],
+      "stageDispatch": {
+        "table": 69948760,
+        "xref": 38220212,
+        "adventureTypes": [
+          26,
+          27
+        ]
+      }
+    },
+    "element_event/summary/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "elementEventInfoId",
+        "element_event/summary/get"
+      ],
+      "wrappers": [
+        [
+          39657996,
+          39658880
+        ]
+      ]
+    },
+    "event_box/draw": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "drawCount",
+        "eventBoxId",
+        "event_box/draw"
+      ],
+      "wrappers": [
+        [
+          37805784,
+          37806872
+        ]
+      ]
+    },
+    "event_box/show": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "eventBoxId",
+        "eventBoxStepId",
+        "event_box/show"
+      ],
+      "wrappers": [
+        [
+          23743104,
+          23744212
+        ]
+      ]
+    },
+    "expedition/complete": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "expedition/complete",
+        "expeditionStageId",
+        "totalLevel",
+        "totalStatus"
+      ],
+      "wrappers": [
+        [
+          36732348,
+          36733816
+        ]
+      ]
+    },
+    "expedition/times": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "expedition/times",
+        "expeditionStageId"
+      ],
+      "wrappers": [
+        [
+          36731484,
+          36732348
+        ]
+      ]
+    },
+    "familia/achievement/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/achievement/get",
+        "targetEventId"
+      ],
+      "wrappers": [
+        [
+          37173552,
+          37174612
+        ]
+      ]
+    },
+    "familia/break": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/break",
+        "familia/leave"
+      ],
+      "wrappers": [
+        [
+          28386936,
+          28387760
+        ]
+      ]
+    },
+    "familia/create": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "activeTime",
+        "description",
+        "familia/create",
+        "godId",
+        "name",
+        "requireApproval",
+        "style",
+        "subActiveTime",
+        "subStyle"
+      ],
+      "wrappers": [
+        [
+          38902392,
+          38905076
+        ]
+      ]
+    },
+    "familia/donate/item": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "amount",
+        "familia/donate/item",
+        "familiaId",
+        "itemId"
+      ],
+      "wrappers": [
+        [
+          38914420,
+          38915712
+        ]
+      ]
+    },
+    "familia/donate/valis": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "amounts",
+        "familia/donate/valis",
+        "familiaId"
+      ],
+      "wrappers": [
+        [
+          38915712,
+          38916872
+        ]
+      ]
+    },
+    "familia/first_reward/receive": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/first_reward/receive",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          38908172,
+          38909260
+        ]
+      ]
+    },
+    "familia/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/get",
+        "familiaId"
+      ],
+      "wrappers": [
+        [
+          28551900,
+          28552572
+        ]
+      ]
+    },
+    "familia/invite/search": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/invite/search",
+        "limit",
+        "searchType"
+      ],
+      "wrappers": [
+        [
+          28367524,
+          28368008
+        ]
+      ]
+    },
+    "familia/invite/send": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/invite/send",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          28409320,
+          28409968
+        ]
+      ]
+    },
+    "familia/invited/accept": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/invited/accept",
+        "familiaId"
+      ],
+      "wrappers": [
+        [
+          28692852,
+          28693500
+        ]
+      ]
+    },
+    "familia/invited/list": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/invited/list"
+      ],
+      "wrappers": [
+        [
+          28685544,
+          28685976
+        ]
+      ]
+    },
+    "familia/join/approve": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "appointeeUserId",
+        "approve",
+        "dismissedUserId",
+        "familia/join/approve",
+        "familia/kick",
+        "familia/manage/appoint_submaster",
+        "familia/manage/change_master",
+        "familia/manage/dismessed_submaster",
+        "familiaId",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          28388404,
+          28391700
+        ]
+      ]
+    },
+    "familia/join/cancel": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/join/cancel",
+        "familiaId"
+      ],
+      "wrappers": [
+        [
+          28688408,
+          28689056
+        ]
+      ]
+    },
+    "familia/join/list/recieved": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/join/list/recieved",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          38954572,
+          38955524
+        ]
+      ]
+    },
+    "familia/join/list/sent": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/join/list/sent"
+      ],
+      "wrappers": [
+        [
+          28689056,
+          28689488
+        ]
+      ]
+    },
+    "familia/join/send": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/join/send",
+        "familiaId"
+      ],
+      "wrappers": [
+        [
+          28553360,
+          28554008
+        ]
+      ]
+    },
+    "familia/kick": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "appointeeUserId",
+        "approve",
+        "dismissedUserId",
+        "familia/join/approve",
+        "familia/kick",
+        "familia/manage/appoint_submaster",
+        "familia/manage/change_master",
+        "familia/manage/dismessed_submaster",
+        "familiaId",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          28388404,
+          28391700
+        ]
+      ]
+    },
+    "familia/leave": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/break",
+        "familia/leave"
+      ],
+      "wrappers": [
+        [
+          28386936,
+          28387760
+        ]
+      ]
+    },
+    "familia/manage/appoint_submaster": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "appointeeUserId",
+        "approve",
+        "dismissedUserId",
+        "familia/join/approve",
+        "familia/kick",
+        "familia/manage/appoint_submaster",
+        "familia/manage/change_master",
+        "familia/manage/dismessed_submaster",
+        "familiaId",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          28388404,
+          28391700
+        ]
+      ]
+    },
+    "familia/manage/change/god": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/manage/change/god",
+        "familiaId",
+        "godId"
+      ],
+      "wrappers": [
+        [
+          28391816,
+          28392936
+        ]
+      ]
+    },
+    "familia/manage/change/info": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "activeTime",
+        "description",
+        "familia/manage/change/info",
+        "familiaId",
+        "godId",
+        "name",
+        "requireApproval",
+        "style",
+        "subActiveTime",
+        "subStyle"
+      ],
+      "wrappers": [
+        [
+          38905076,
+          38907876
+        ]
+      ]
+    },
+    "familia/manage/change_master": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "appointeeUserId",
+        "approve",
+        "dismissedUserId",
+        "familia/join/approve",
+        "familia/kick",
+        "familia/manage/appoint_submaster",
+        "familia/manage/change_master",
+        "familia/manage/dismessed_submaster",
+        "familiaId",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          28388404,
+          28391700
+        ]
+      ]
+    },
+    "familia/manage/dismessed_submaster": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "appointeeUserId",
+        "approve",
+        "dismissedUserId",
+        "familia/join/approve",
+        "familia/kick",
+        "familia/manage/appoint_submaster",
+        "familia/manage/change_master",
+        "familia/manage/dismessed_submaster",
+        "familiaId",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          28388404,
+          28391700
+        ]
+      ]
+    },
+    "familia/msg_board/feed": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/msg_board/feed",
+        "familiaId"
+      ],
+      "wrappers": [
+        [
+          38966284,
+          38967076
+        ],
+        [
+          38967076,
+          38967832
+        ]
+      ]
+    },
+    "familia/msg_board/feed_by_no": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "cond",
+        "familia/msg_board/feed_by_no",
+        "familiaId",
+        "no",
+        "resultCount"
+      ],
+      "wrappers": [
+        [
+          38967832,
+          38969136
+        ]
+      ]
+    },
+    "familia/msg_board/send": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "/tmp/j99518/../../../app/argo/UI/Home/Familia/Skill/ArgoFamiliaSkillUIState.cpp",
+        "ASSERT-FAILED",
+        "CurrentConditionState error: {}",
+        "[WFS {}] {} in {} {}() L{}",
+        "false",
+        "familia/msg_board/send",
+        "familiaId",
+        "familiaSkill",
+        "familiaSkill id:{} is null.",
+        "familiaSkillGroup",
+        "familiaSkillGroup id:{} is null.",
+        "message",
+        "p1",
+        "p2",
+        "pcSkill",
+        "pcSkillId:{} is null.",
+        "postType",
+        "requestFamiliaSkillSuggestion",
+        "void toybox::gui::ArgoFamiliaSkillUIState::requestFamiliaSkillSuggestion(const int64_t)"
+      ],
+      "wrappers": [
+        [
+          28060884,
+          28064520
+        ],
+        [
+          38963460,
+          38964576
+        ],
+        [
+          38964576,
+          38965732
+        ]
+      ]
+    },
+    "familia/mystatus": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/mystatus",
+        "is_login"
+      ],
+      "wrappers": [
+        [
+          38901516,
+          38902392
+        ]
+      ]
+    },
+    "familia/search/name": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/search/name",
+        "familia/search/option",
+        "name",
+        "requireApproval",
+        "style"
+      ],
+      "wrappers": [
+        [
+          28689576,
+          28691004
+        ]
+      ]
+    },
+    "familia/search/option": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/search/name",
+        "familia/search/option",
+        "name",
+        "requireApproval",
+        "style"
+      ],
+      "wrappers": [
+        [
+          28689576,
+          28691004
+        ]
+      ]
+    },
+    "familia/search/random": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/search/random"
+      ],
+      "wrappers": [
+        [
+          28680224,
+          28680720
+        ]
+      ]
+    },
+    "familia/shop/item/buy": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/shop/item/buy",
+        "familiaId",
+        "familiaShopId"
+      ],
+      "wrappers": [
+        [
+          36814480,
+          36815608
+        ]
+      ]
+    },
+    "familia/shop/item/set": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/shop/item/set",
+        "familiaId",
+        "familiaShopId"
+      ],
+      "wrappers": [
+        [
+          38917696,
+          38918824
+        ]
+      ]
+    },
+    "familia/skill/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/skill/get"
+      ],
+      "wrappers": [
+        [
+          28387760,
+          28388404
+        ],
+        [
+          35080772,
+          35081336
+        ]
+      ]
+    },
+    "familia/skill/growth": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familia/skill/growth",
+        "familiaId",
+        "familiaSkillId"
+      ],
+      "wrappers": [
+        [
+          28059980,
+          28060884
+        ]
+      ]
+    },
+    "familia/union/setting": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "condition",
+        "familia/union/setting",
+        "familiaId",
+        "status"
+      ],
+      "wrappers": [
+        [
+          38919240,
+          38920564
+        ]
+      ]
+    },
+    "friend/follow": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "friend/follow",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          30367540,
+          30368188
+        ],
+        [
+          38600988,
+          38601872
+        ]
+      ]
+    },
+    "friend/follower/list": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "friend/follower/list",
+        "page"
+      ],
+      "wrappers": [
+        [
+          38599204,
+          38600116
+        ]
+      ]
+    },
+    "friend/following/list": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "friend/following/list",
+        "page"
+      ],
+      "wrappers": [
+        [
+          38598232,
+          38599204
+        ]
+      ]
+    },
+    "friend/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "friend/get",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          38600116,
+          38600988
+        ]
+      ]
+    },
+    "friend/support/list": {
+      "modes": [
+        "empty"
+      ],
+      "strings": [
+        "friend/support/list"
+      ],
+      "wrappers": [
+        [
+          38627112,
+          38627784
+        ]
+      ]
+    },
+    "friend/unfollow": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "friend/unfollow",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          38601872,
+          38602756
+        ]
+      ]
+    },
+    "gift/receive": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "gift/receive",
+        "giftIds",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          38323224,
+          38324392
+        ]
+      ]
+    },
+    "guild_event/ranking/familia/around/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "guild_event/ranking/familia/around/get",
+        "gveId"
+      ],
+      "wrappers": [
+        [
+          37212900,
+          37213868
+        ]
+      ]
+    },
+    "guild_event/ranking/familia/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "guild_event/ranking/familia/get",
+        "gveId"
+      ],
+      "wrappers": [
+        [
+          37213868,
+          37214856
+        ]
+      ]
+    },
+    "guild_event/ranking/familia/top/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "guild_event/ranking/familia/top/get",
+        "gveId"
+      ],
+      "wrappers": [
+        [
+          37211500,
+          37212468
+        ]
+      ]
+    },
+    "guild_event/score/user/daily/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "guild_event/score/user/daily/get",
+        "gveId"
+      ],
+      "wrappers": [
+        [
+          27380916,
+          27381972
+        ]
+      ]
+    },
+    "guild_event/stage/complete": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "adventure/stage/complete",
+        "secretMissionCompleted"
+      ],
+      "wrappers": [
+        [
+          38218732,
+          38221572
+        ]
+      ],
+      "stageDispatch": {
+        "table": 69948760,
+        "xref": 38220212,
+        "adventureTypes": [
+          20
+        ]
+      }
+    },
+    "guild_event/status/log": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "count",
+        "guild_event/status/log",
+        "gveId"
+      ],
+      "wrappers": [
+        [
+          37181380,
+          37182428
+        ]
+      ]
+    },
+    "guild_raid/player_info/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "guild_raid/player_info/get",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          37384028,
+          37384964
+        ]
+      ]
+    },
+    "guild_raid/ranking/familia/around/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "guildRaidInformationId",
+        "guild_raid/ranking/familia/around/get"
+      ],
+      "wrappers": [
+        [
+          37379184,
+          37380136
+        ]
+      ]
+    },
+    "guild_raid/ranking/familia/top/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "guildRaidInformationId",
+        "guild_raid/ranking/familia/top/get"
+      ],
+      "wrappers": [
+        [
+          37377800,
+          37378752
+        ]
+      ]
+    },
+    "guild_raid/ranking/member/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "guildRaidInformationId",
+        "guild_raid/ranking/member/get"
+      ],
+      "wrappers": [
+        [
+          37380136,
+          37381080
+        ]
+      ]
+    },
+    "guild_raid/reward/defeat": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "guildRaidInformationId",
+        "guild_raid/reward/defeat"
+      ],
+      "wrappers": [
+        [
+          22446208,
+          22447156
+        ]
+      ]
+    },
+    "guild_raid/stage/complete": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "adventure/stage/complete",
+        "secretMissionCompleted"
+      ],
+      "wrappers": [
+        [
+          38218732,
+          38221572
+        ]
+      ],
+      "stageDispatch": {
+        "table": 69948760,
+        "xref": 38220212,
+        "adventureTypes": [
+          22
+        ]
+      }
+    },
+    "guild_raid/status/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "guildRaidInformationId",
+        "guild_raid/status/get"
+      ],
+      "wrappers": [
+        [
+          22444360,
+          22445056
+        ]
+      ]
+    },
+    "guild_raid/status/log": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "guildRaidInformationId",
+        "guild_raid/status/log"
+      ],
+      "wrappers": [
+        [
+          22447156,
+          22447828
+        ]
+      ]
+    },
+    "guild_raid/status/preinitiation": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "guildRaidInformationId",
+        "guild_raid/status/preinitiation"
+      ],
+      "wrappers": [
+        [
+          35081800,
+          35082992
+        ]
+      ]
+    },
+    "gve/player_info/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "gve/player_info/get",
+        "gveId",
+        "targetUserId"
+      ],
+      "wrappers": [
+        [
+          21380308,
+          21381508
+        ]
+      ]
+    },
+    "gve/ranking/character/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "/tmp/j99518/../../../app/argo/UI/Home/GvE/ArgoGvEUIState.cpp",
+        "ASSERT-FAILED",
+        "[WFS {}] {} in {} {}() L{}",
+        "gve/ranking/character/get",
+        "gveId",
+        "not found target gve information [weekType] [{}]",
+        "requestCharaRanking",
+        "targetGveInfo != nullptr",
+        "void toybox::gui::ArgoGvEUIState::requestCharaRanking()"
+      ],
+      "wrappers": [
+        [
+          21381508,
+          21382440
+        ]
+      ]
+    },
+    "gve/ranking/user/familia/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "gve/ranking/user/familia/get",
+        "gveId"
+      ],
+      "wrappers": [
+        [
+          21378124,
+          21378772
+        ]
+      ]
+    },
+    "gve/stage/complete": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "adventure/stage/complete",
+        "secretMissionCompleted"
+      ],
+      "wrappers": [
+        [
+          38218732,
+          38221572
+        ]
+      ],
+      "stageDispatch": {
+        "table": 69948760,
+        "xref": 38220212,
+        "adventureTypes": [
+          19
+        ]
+      }
+    },
+    "gve/summary/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "gve/summary/get",
+        "gveId"
+      ],
+      "wrappers": [
+        [
+          21360156,
+          21360828
+        ]
+      ]
+    },
+    "gvg/familia/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "gvg/familia/get",
+        "gvgId"
+      ],
+      "wrappers": [
+        [
+          21045712,
+          21046360
+        ]
+      ]
+    },
+    "gvg/info/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "gvg/info/get",
+        "gvgId"
+      ],
+      "wrappers": [
+        [
+          36863920,
+          36864904
+        ]
+      ]
+    },
+    "gvg/league/ranking/familia/around/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "gvg/league/ranking/familia/around/get",
+        "gvgId"
+      ],
+      "wrappers": [
+        [
+          36905108,
+          36906060
+        ]
+      ]
+    },
+    "gvg/league/ranking/familia/top/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "gvg/league/ranking/familia/top/get",
+        "gvgId"
+      ],
+      "wrappers": [
+        [
+          36903152,
+          36904104
+        ]
+      ]
+    },
+    "gvg/league/ranking/member/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "gvg/league/ranking/member/get",
+        "gvgId"
+      ],
+      "wrappers": [
+        [
+          36901004,
+          36902100
+        ]
+      ]
+    },
+    "gvg/party/update": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "gvg/party/update",
+        "party"
+      ],
+      "wrappers": [
+        [
+          38486964,
+          38488088
+        ]
+      ]
+    },
+    "gvg/player_history/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "battleId",
+        "gvg/player_history/get",
+        "targetUserId"
+      ],
+      "wrappers": [
+        [
+          36862800,
+          36863920
+        ]
+      ]
+    },
+    "gvg/player_info/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "gvg/player_info/get",
+        "gvgId",
+        "isOwnTeam",
+        "isScout",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          36856948,
+          36858352
+        ]
+      ]
+    },
+    "gvg/ranking/character/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "gvg/ranking/character/get",
+        "gvgId"
+      ],
+      "wrappers": [
+        [
+          20627612,
+          20628304
+        ]
+      ]
+    },
+    "gvg/ranking/familia/around/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "gvg/ranking/familia/around/get",
+        "gvgId"
+      ],
+      "wrappers": [
+        [
+          36898552,
+          36899504
+        ]
+      ]
+    },
+    "gvg/ranking/familia/top/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "gvg/ranking/familia/top/get",
+        "gvgId"
+      ],
+      "wrappers": [
+        [
+          36895696,
+          36896648
+        ]
+      ]
+    },
+    "gvg/ranking/member/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "gvg/ranking/member/get",
+        "gvgId"
+      ],
+      "wrappers": [
+        [
+          36900052,
+          36901004
+        ]
+      ]
+    },
+    "gvg/status/captain/update": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "= std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> >, BooleanType = bool, NumberIntegerType = long, NumberUnsignedType = unsigned long, NumberFloatType = double, AllocatorType = allocator]",
+        "captainUserId",
+        "common_dialog_notice_title",
+        "guild_vs_guild_required_error",
+        "gvg/status/captain/update",
+        "gvgId",
+        "subCaptainUserId_1",
+        "subCaptainUserId_2",
+        "subCaptainUserId_3"
+      ],
+      "wrappers": [
+        [
+          21047268,
+          21049324
+        ]
+      ]
+    },
+    "gvg/status/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "gvg/status/get",
+        "gvgId"
+      ],
+      "wrappers": [
+        [
+          36855952,
+          36856948
+        ]
+      ]
+    },
+    "gvg/status/log": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "gvg/status/log",
+        "gvgId"
+      ],
+      "wrappers": [
+        [
+          20846584,
+          20847476
+        ]
+      ]
+    },
+    "gvg/tournament/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "gvg/tournament/get",
+        "gvgId"
+      ],
+      "wrappers": [
+        [
+          37927852,
+          37928640
+        ]
+      ]
+    },
+    "gvg/tournament/status/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "gvg/tournament/status/get",
+        "gvgId",
+        "pairId"
+      ],
+      "wrappers": [
+        [
+          36861540,
+          36862800
+        ]
+      ]
+    },
+    "gvg/tournament/status/log": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "gvg/tournament/status/log",
+        "gvgId",
+        "pairId"
+      ],
+      "wrappers": [
+        [
+          20752428,
+          20753556
+        ]
+      ]
+    },
+    "gvg/tournament/support/vote": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familiaId",
+        "gvg/tournament/support/vote",
+        "gvgId"
+      ],
+      "wrappers": [
+        [
+          37929912,
+          37931036
+        ]
+      ]
+    },
+    "gvg/tournament/vote": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "familiaId",
+        "gvg/tournament/vote",
+        "gvgId",
+        "voteCount"
+      ],
+      "wrappers": [
+        [
+          37928640,
+          37929912
+        ]
+      ]
+    },
+    "login_bonus_explorer/draw": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "loginBonusExplorerId",
+        "login_bonus_explorer/draw"
+      ],
+      "wrappers": [
+        [
+          30135284,
+          30135788
+        ]
+      ]
+    },
+    "lottery/draw": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "buttonIndex",
+        "clientChargeHardCurrency",
+        "clientFreeHardCurrency",
+        "clientTotalHardCurrency",
+        "consumeAmount",
+        "currentStepIndex",
+        "isScratch",
+        "lottery/draw",
+        "lotteryId",
+        "pickCount",
+        "progressCount",
+        "selectedPcId1",
+        "selectedPcId2",
+        "selectedPcId3"
+      ],
+      "wrappers": [
+        [
+          36627632,
+          36629924
+        ]
+      ]
+    },
+    "lottery/ticket/draw": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "buttonIndex",
+        "clientChargeHardCurrency",
+        "clientFreeHardCurrency",
+        "clientTotalHardCurrency",
+        "consumeAmount",
+        "currentStepIndex",
+        "drawCount",
+        "isScratch",
+        "lottery/ticket/draw",
+        "lotteryId",
+        "pickCount",
+        "progressCount",
+        "selectedPcId1",
+        "selectedPcId2",
+        "selectedPcId3"
+      ],
+      "wrappers": [
+        [
+          36630596,
+          36632660
+        ]
+      ]
+    },
+    "notice/anime/get": {
+      "modes": [
+        "empty"
+      ],
+      "strings": [
+        "notice/anime/get"
+      ],
+      "wrappers": [
+        [
+          30243572,
+          30243852
+        ]
+      ]
+    },
+    "notice/promotion/show": {
+      "modes": [
+        "empty"
+      ],
+      "strings": [
+        "notice/promotion/show"
+      ],
+      "wrappers": [
+        [
+          30243292,
+          30243572
+        ]
+      ]
+    },
+    "notice/show": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "ction6__funcIZN6toybox3gui23ArgoEventBoxResultLayer19setupCharacterSpineERKNS_10shared_ptrINS2_14DomainEventBoxEEEPKNS2_10masterdata16EventBoxReactionEE3$_0NS_9allocatorISE_EEFviiEEE",
+        "eshButtonListenerERKbENK3$_2clERKmEUlNS2_5State10StateEventEE0_NS_9allocatorISC_EEFvSB_EEE",
+        "eventBoxId",
+        "lotteryId",
+        "lottoOrarioId",
+        "notice/show",
+        "packId",
+        "scratchId"
+      ],
+      "wrappers": [
+        [
+          23754664,
+          23755148
+        ],
+        [
+          24026424,
+          24027308
+        ],
+        [
+          29986148,
+          29986628
+        ],
+        [
+          30001624,
+          30002148
+        ],
+        [
+          30126984,
+          30127456
+        ],
+        [
+          30770536,
+          30771272
+        ]
+      ]
+    },
+    "notice/subscription/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "ctionIFvRKN7gamelib7ProductEEEEENK4$_14clEiS8_ENKUlvE_clEvEUlNS_5State10StateEventEE_",
+        "notice/subscription/get",
+        "subscriptionId"
+      ],
+      "wrappers": [
+        [
+          25267636,
+          25268160
+        ]
+      ]
+    },
+    "present/apply/twitter": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "characterPresentCharacterInfoIds",
+        "characterPresentInfoId",
+        "present/apply/twitter",
+        "twitterId"
+      ],
+      "wrappers": [
+        [
+          37570192,
+          37572468
+        ]
+      ]
+    },
+    "present/character/reward/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "characterPresentCharacterInfoId",
+        "present/character/reward/get"
+      ],
+      "wrappers": [
+        [
+          37572468,
+          37574308
+        ]
+      ]
+    },
+    "pvb/character/ranking/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "pvb/character/ranking/get",
+        "pvbId"
+      ],
+      "wrappers": [
+        [
+          29562996,
+          29563856
+        ]
+      ]
+    },
+    "pvb/friend/ranking/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "page",
+        "pvb/friend/ranking/get",
+        "pvbId"
+      ],
+      "wrappers": [
+        [
+          39131040,
+          39132596
+        ]
+      ]
+    },
+    "pvb/group/ranking/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "pvb/group/ranking/get",
+        "pvbGroupId",
+        "pvbGroupRankingIndex",
+        "pvbId"
+      ],
+      "wrappers": [
+        [
+          39129780,
+          39131040
+        ]
+      ]
+    },
+    "pvb/player_info/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "pvb/player_info/get",
+        "pvbId",
+        "targetUserId"
+      ],
+      "wrappers": [
+        [
+          29564060,
+          29565400
+        ],
+        [
+          39175284,
+          39176608
+        ]
+      ]
+    },
+    "pvb/stage/complete": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "adventure/stage/complete",
+        "secretMissionCompleted"
+      ],
+      "wrappers": [
+        [
+          38218732,
+          38221572
+        ]
+      ],
+      "stageDispatch": {
+        "table": 69948760,
+        "xref": 38220212,
+        "adventureTypes": [
+          15
+        ]
+      }
+    },
+    "pvb/summary/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "pvb/summary/get",
+        "pvbId"
+      ],
+      "wrappers": [
+        [
+          39128856,
+          39129780
+        ]
+      ]
+    },
+    "pvb/total/ranking/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "pvb/total/ranking/get",
+        "pvbId"
+      ],
+      "wrappers": [
+        [
+          39132596,
+          39133504
+        ]
+      ]
+    },
+    "pve/recent/clear/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "adventureStageId",
+        "pve/recent/clear/get"
+      ],
+      "wrappers": [
+        [
+          29368580,
+          29369444
+        ]
+      ]
+    },
+    "pve/score/ranking/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "adventureStageId",
+        "pve/score/ranking/get"
+      ],
+      "wrappers": [
+        [
+          29367720,
+          29368580
+        ]
+      ]
+    },
+    "pve/stage/complete": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "adventure/stage/complete",
+        "secretMissionCompleted"
+      ],
+      "wrappers": [
+        [
+          38218732,
+          38221572
+        ]
+      ],
+      "stageDispatch": {
+        "table": 69948760,
+        "xref": 38220212,
+        "adventureTypes": [
+          12
+        ]
+      }
+    },
+    "pvp/battle/end": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "battleId",
+        "isRetire",
+        "isWin",
+        "maxDamage",
+        "nStage::rewardGroupMaster(toybox::ExpeditionResult) const",
+        "pvp/battle/end",
+        "pvpId",
+        "result",
+        "spendTurns",
+        "survivedPCs"
+      ],
+      "wrappers": [
+        [
+          35737076,
+          35739316
+        ]
+      ]
+    },
+    "pvp/battle/restart": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "/tmp/j99518/../../../source/Game/PvPUtils.cpp",
+        "ASSERT-FAILED",
+        "PvP battle not restartable",
+        "[WFS {}] {} in {} {}() L{}",
+        "canRestart()",
+        "pvp/battle/restart",
+        "pvpId",
+        "restartBattle",
+        "static void toybox::pvp::PvPUtils::restartBattle(const std::function<void (int)> &)"
+      ],
+      "wrappers": [
+        [
+          34868584,
+          34869776
+        ]
+      ]
+    },
+    "pvp/battle/start": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "pvp/battle/start",
+        "pvpId"
+      ],
+      "wrappers": [
+        [
+          26428108,
+          26428700
+        ]
+      ]
+    },
+    "pvp/character/ranking/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "pvp/character/ranking/get",
+        "pvpId"
+      ],
+      "wrappers": [
+        [
+          29746328,
+          29747188
+        ]
+      ]
+    },
+    "pvp/friend/ranking/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "page",
+        "pvp/friend/ranking/get",
+        "pvpId"
+      ],
+      "wrappers": [
+        [
+          39444804,
+          39446360
+        ]
+      ]
+    },
+    "pvp/player_info/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "pvp/player_info/get",
+        "pvpId",
+        "targetUserId"
+      ],
+      "wrappers": [
+        [
+          29740564,
+          29741908
+        ],
+        [
+          39213044,
+          39214628
+        ]
+      ]
+    },
+    "pvp/summary/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "pvp/summary/get",
+        "pvpId"
+      ],
+      "wrappers": [
+        [
+          39443460,
+          39444368
+        ]
+      ]
+    },
+    "raid/status": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "raid/status",
+        "raidGroupId"
+      ],
+      "wrappers": [
+        [
+          26981412,
+          26982808
+        ],
+        [
+          35085352,
+          35087860
+        ]
+      ]
+    },
+    "scratch/draw": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "position",
+        "scratch/draw",
+        "scratchId"
+      ],
+      "wrappers": [
+        [
+          38528124,
+          38529212
+        ]
+      ]
+    },
+    "serial_pvp/battle/end": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "attack_result",
+        "battleId",
+        "battleMainScore",
+        "battleSubScore",
+        "characterBonus",
+        "gradeBonusRate",
+        "isRetire",
+        "isWin",
+        "nStage::rewardGroupMaster(toybox::ExpeditionResult) const",
+        "result",
+        "roundScore",
+        "serialPvpId",
+        "serial_pvp/battle/end",
+        "technicalPartyBonus",
+        "technicalPlayBonus"
+      ],
+      "wrappers": [
+        [
+          34635260,
+          34638624
+        ],
+        [
+          35645860,
+          35649408
+        ]
+      ]
+    },
+    "serial_pvp/battle/restart": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "/tmp/j99518/../../../source/Game/SerialPvp/SerialPvpUtils.cpp",
+        "ASSERT-FAILED",
+        "SerialPvp battle not restartable",
+        "[WFS {}] {} in {} {}() L{}",
+        "canRestart()",
+        "restartBattle",
+        "serialPvpId",
+        "serial_pvp/battle/restart",
+        "static void toybox::serial_pvp::SerialPvpUtils::restartBattle(const std::function<void (int)> &)",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          34633484,
+          34635260
+        ]
+      ]
+    },
+    "serial_pvp/battle/start": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "partyIndex",
+        "serialPvpId",
+        "serial_pvp/battle/start",
+        "userId",
+        "userParty"
+      ],
+      "wrappers": [
+        [
+          26465144,
+          26466568
+        ]
+      ]
+    },
+    "serial_pvp/character/ranking/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "serialPvpId",
+        "serial_pvp/character/ranking/get"
+      ],
+      "wrappers": [
+        [
+          29083260,
+          29083948
+        ]
+      ]
+    },
+    "serial_pvp/grade/select": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "gradeId",
+        "serialPvpId",
+        "serial_pvp/grade/select"
+      ],
+      "wrappers": [
+        [
+          36937944,
+          36939060
+        ]
+      ]
+    },
+    "serial_pvp/player_info/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "serialPvpId",
+        "serial_pvp/player_info/get",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          29097192,
+          29098544
+        ],
+        [
+          36967852,
+          36969184
+        ]
+      ]
+    },
+    "serial_pvp/ranking/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "serialPvpId",
+        "serial_pvp/ranking/get"
+      ],
+      "wrappers": [
+        [
+          36962100,
+          36963096
+        ]
+      ]
+    },
+    "serial_pvp/result/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "serialPvpId",
+        "serial_pvp/result/get"
+      ],
+      "wrappers": [
+        [
+          32548108,
+          32548984
+        ]
+      ]
+    },
+    "serial_pvp/rival_list/update": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "gradeId",
+        "serialPvpId",
+        "serial_pvp/rival_list/update"
+      ],
+      "wrappers": [
+        [
+          36936828,
+          36937944
+        ]
+      ]
+    },
+    "serial_pvp/summary/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "serialPvpId",
+        "serial_pvp/summary/get",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          36933136,
+          36934320
+        ]
+      ]
+    },
+    "shooting/ranking/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "rankingDateAt",
+        "shooting/ranking/get",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          37760820,
+          37762152
+        ]
+      ]
+    },
+    "shooting/stage/complete": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "pcId",
+        "score",
+        "shooting/stage/complete"
+      ],
+      "wrappers": [
+        [
+          37785664,
+          37786764
+        ]
+      ]
+    },
+    "shop/buy": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "orIcEEEEblmdSB_EEEEEEEENK3$_1clEiSF_ENKUlvE_clEvEUlvE_",
+        "shop/buy",
+        "shopProductId"
+      ],
+      "wrappers": [
+        [
+          37885584,
+          37886404
+        ]
+      ]
+    },
+    "subscription/bonus": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "isPurchase",
+        "subscription/bonus"
+      ],
+      "wrappers": [
+        [
+          25226568,
+          25227040
+        ]
+      ]
+    },
+    "subscription/ticket/consume": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "count",
+        "iptionTicket",
+        "itemId",
+        "subscription/ticket/consume"
+      ],
+      "wrappers": [
+        [
+          37617588,
+          37618488
+        ]
+      ]
+    },
+    "takarakuji/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "takarakuji/get",
+        "takarakujiInfoId"
+      ],
+      "wrappers": [
+        [
+          39515460,
+          39516332
+        ]
+      ]
+    },
+    "tutorial/draw": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "lotteryId",
+        "pcId",
+        "tutorial/draw"
+      ],
+      "wrappers": [
+        [
+          36637324,
+          36638240
+        ]
+      ]
+    },
+    "under_pvp/battle/end": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "battleId",
+        "isRetire",
+        "isRevenge",
+        "isWin",
+        "lastBattleStartAt",
+        "nStage::rewardGroupMaster(toybox::ExpeditionResult) const",
+        "result",
+        "revengeStartAt",
+        "underPvpId",
+        "under_pvp/battle/end"
+      ],
+      "wrappers": [
+        [
+          35500172,
+          35501892
+        ],
+        [
+          35629636,
+          35632244
+        ]
+      ]
+    },
+    "under_pvp/battle/restart": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "/tmp/j99518/../../../source/Game/UnderPvP/UnderPvPUtils.cpp",
+        "ASSERT-FAILED",
+        "UnderPvP battle not restartable",
+        "[WFS {}] {} in {} {}() L{}",
+        "canRestart()",
+        "isRevenge",
+        "lastBattleStartAt",
+        "rating",
+        "restartBattle",
+        "revengeStartAt",
+        "static void toybox::under_pvp::UnderPvPUtils::restartBattle(const std::function<void (int)> &)",
+        "underPvpId",
+        "under_pvp/battle/restart",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          35508384,
+          35511200
+        ]
+      ]
+    },
+    "under_pvp/battle/start": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "isRevenge",
+        "rating",
+        "revengeStartAt",
+        "underPvpId",
+        "under_pvp/battle/start",
+        "userId",
+        "userParty"
+      ],
+      "wrappers": [
+        [
+          26463304,
+          26465056
+        ]
+      ]
+    },
+    "under_pvp/character/ranking/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "underPvpId",
+        "under_pvp/character/ranking/get"
+      ],
+      "wrappers": [
+        [
+          29249024,
+          29249884
+        ]
+      ]
+    },
+    "under_pvp/player_info/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "under_pvp/player_info/get",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          29246980,
+          29248068
+        ],
+        [
+          38732404,
+          38733464
+        ]
+      ]
+    },
+    "under_pvp/rival_list/update": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "isSelectedRivalIdReset",
+        "underPvpId",
+        "under_pvp/rival_list/update"
+      ],
+      "wrappers": [
+        [
+          38704496,
+          38706264
+        ]
+      ]
+    },
+    "under_pvp/summary/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "underPvpId",
+        "under_pvp/summary/get",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          38706264,
+          38707448
+        ]
+      ]
+    },
+    "union_raid/battle/log": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "unionRaidInfoId",
+        "union_raid/battle/log"
+      ],
+      "wrappers": [
+        [
+          37277928,
+          37278660
+        ]
+      ]
+    },
+    "union_raid/chat/list": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "unionRaidInfoId",
+        "union_raid/chat/list"
+      ],
+      "wrappers": [
+        [
+          37326424,
+          37327208
+        ]
+      ]
+    },
+    "union_raid/chat/send": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "line",
+        "message",
+        "sic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEblmdSB_EEEEEUliE_",
+        "unionRaidInfoId",
+        "union_raid/chat/send",
+        "wordIds"
+      ],
+      "wrappers": [
+        [
+          37330092,
+          37332920
+        ]
+      ]
+    },
+    "union_raid/player_info/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "union_raid/player_info/get",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          37279096,
+          37280032
+        ],
+        [
+          37313132,
+          37314068
+        ]
+      ]
+    },
+    "union_raid/ranking/member/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "rankingType",
+        "unionRaidInfoId",
+        "union_raid/ranking/member/get"
+      ],
+      "wrappers": [
+        [
+          37308448,
+          37309732
+        ]
+      ]
+    },
+    "union_raid/reaction/send": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "feedId",
+        "reaction",
+        "reactionCount",
+        "reactionId",
+        "reactions",
+        "targetUserId",
+        "unionRaidInfoId",
+        "union_raid/reaction/send"
+      ],
+      "wrappers": [
+        [
+          37327644,
+          37330092
+        ]
+      ]
+    },
+    "union_raid/reward/defeat": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "debug",
+        "unionRaidInfoId",
+        "union_raid/reward/defeat"
+      ],
+      "wrappers": [
+        [
+          34882564,
+          34883540
+        ]
+      ]
+    },
+    "union_raid/skill/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "unionRaidInfoId",
+        "union_raid/skill/get"
+      ],
+      "wrappers": [
+        [
+          36993572,
+          36994328
+        ]
+      ]
+    },
+    "union_raid/skill/growth": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "medalAmount",
+        "medalId",
+        "unionRaidInfoId",
+        "unionRaidSkillGroupId",
+        "union_raid/skill/growth"
+      ],
+      "wrappers": [
+        [
+          36995044,
+          36996860
+        ]
+      ]
+    },
+    "union_raid/stage/complete": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "adventure/stage/complete",
+        "secretMissionCompleted"
+      ],
+      "wrappers": [
+        [
+          38218732,
+          38221572
+        ]
+      ],
+      "stageDispatch": {
+        "table": 69948760,
+        "xref": 38220212,
+        "adventureTypes": [
+          28
+        ]
+      }
+    },
+    "union_raid/status/get": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "debug",
+        "unionRaidInfoId",
+        "union_raid/status/get"
+      ],
+      "wrappers": [
+        [
+          34881388,
+          34882564
+        ]
+      ]
+    },
+    "union_raid/status/log": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "unionRaidInfoId",
+        "union_raid/status/log"
+      ],
+      "wrappers": [
+        [
+          37256464,
+          37257240
+        ]
+      ]
+    },
+    "union_raid/status/preinitiation": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "debug",
+        "defeatCount",
+        "unionRaidInfoId",
+        "unionRaidStageId",
+        "unionRaidStageIndex",
+        "union_raid/status/preinitiation"
+      ],
+      "wrappers": [
+        [
+          35082992,
+          35085352
+        ]
+      ]
+    },
+    "user/migration/confirm": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "user/migration/confirm",
+        "userId"
+      ],
+      "wrappers": [
+        [
+          33747596,
+          33748128
+        ]
+      ]
+    },
+    "user_data/pull": {
+      "modes": [
+        "json"
+      ],
+      "strings": [
+        "Blocking",
+        "UserArea",
+        "UserGift",
+        "UserLoginBonusExplorer",
+        "UserNotice",
+        "UserPvBRecord",
+        "UserPvPRecord",
+        "UserUnderPvPRecord",
+        "erLoginBonusExplorerAndGiftPullERKNSt6__ndk18functionIFviRKNS1_10shared_ptrIN8nlohmann10basic_jsonINS1_3mapENS1_6vectorENS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEblmdSB_EEEEEEEE3$_2",
+        "user_data/pull"
+      ],
+      "wrappers": [
+        [
+          35582516,
+          35583144
+        ],
+        [
+          38033724,
+          38034608
+        ],
+        [
+          38297244,
+          38297796
+        ],
+        [
+          38322320,
+          38323224
+        ],
+        [
+          38330764,
+          38331316
+        ],
+        [
+          38731360,
+          38732268
+        ],
+        [
+          38800412,
+          38801488
+        ],
+        [
+          39174224,
+          39175132
+        ],
+        [
+          39212000,
+          39212908
+        ]
+      ]
+    }
+  }
+}

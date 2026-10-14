@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.22.1)
+project(danmemore_node_bridge)
+add_library(danmemore_node_bridge SHARED src/main/cpp/native-lib.cpp)
+target_include_directories(danmemore_node_bridge PRIVATE ${NODE_ROOT}/include/node)
+add_library(libnode SHARED IMPORTED)
+set_target_properties(libnode PROPERTIES IMPORTED_LOCATION ${NODE_ROOT}/bin/${ANDROID_ABI}/libnode.so)
+find_library(log-lib log)
+target_link_libraries(danmemore_node_bridge libnode ${log-lib})
+target_link_options(danmemore_node_bridge PRIVATE "-Wl,-z,max-page-size=16384" "-Wl,-z,common-page-size=16384")
+

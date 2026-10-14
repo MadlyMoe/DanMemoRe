@@ -2,5 +2,13 @@
 /contents-complete.zip
 /.work/
 /dist/
+/ghidra-*/
+/android/**/.gradle/
+/android/**/.kotlin/
+/android/**/.cxx/
+/android/**/build/
+/android/**/local.properties
+/tools/repair_tutorial.cjs
+/tools/test_repair_tutorial.cjs
 __pycache__/
 *.pyc

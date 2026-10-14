@@ -1,0 +1,742 @@
+{
+  "version": 1,
+  "clientVersion": "15.1.0",
+  "nativeSha256": "e49a8cc7991f8946365a28aebad605ce566b034826dd4b34a982ab18b38303b3",
+  "tables": {
+    "UserAchievement": {
+      "shape": "array",
+      "nativeKey": "achievement",
+      "dispatch": "0x27f4b5c"
+    },
+    "UserAchievementReward": {
+      "shape": "array",
+      "nativeKey": "achievementReward",
+      "dispatch": "0x27f4cac"
+    },
+    "UserAdScratch": {
+      "shape": "array",
+      "nativeKey": "adScratch",
+      "dispatch": "0x27fc22c"
+    },
+    "UserAdScratchContent": {
+      "shape": "array",
+      "nativeKey": "adScratchContent",
+      "dispatch": "0x27fc384"
+    },
+    "UserAdventureCampaign": {
+      "shape": "array",
+      "nativeKey": "adventureCampaign",
+      "dispatch": "0x27f6230"
+    },
+    "UserAdventureLevelInfo": {
+      "shape": "object",
+      "nativeKey": "adventureLevelInfo",
+      "dispatch": "0x27fb790"
+    },
+    "UserAdventureMission": {
+      "shape": "array",
+      "nativeKey": "adventureMission",
+      "dispatch": "0x27fb7a4"
+    },
+    "UserAdventureRaid": {
+      "shape": "array",
+      "nativeKey": "adventureRaid",
+      "dispatch": "0x27f9244"
+    },
+    "UserAdventureRaidPart": {
+      "shape": "array",
+      "nativeKey": "adventureRaidPart",
+      "dispatch": "0x27f93f0"
+    },
+    "UserAdventureRaidState": {
+      "shape": "array",
+      "nativeKey": "adventureRaidState",
+      "dispatch": "0x27f9548"
+    },
+    "UserAdventureStage": {
+      "shape": "array",
+      "nativeKey": "adventureStage",
+      "dispatch": "0x27f4e68"
+    },
+    "UserAdventureStageReward": {
+      "shape": "array",
+      "nativeKey": "adventureStageReward",
+      "dispatch": "0x27f4fb8"
+    },
+    "UserAdventureState": {
+      "shape": "object",
+      "nativeKey": "adventureState",
+      "dispatch": "0x27f5bb4"
+    },
+    "UserAdventureTicket": {
+      "shape": "array",
+      "nativeKey": "adventureTicket",
+      "dispatch": "0x27f40c4"
+    },
+    "UserAdvertisement": {
+      "shape": "array",
+      "nativeKey": "advertisement",
+      "dispatch": "0x27fc4dc"
+    },
+    "UserAlarmSetting": {
+      "shape": "object",
+      "nativeKey": "alarmSetting",
+      "dispatch": "0x27f88f8"
+    },
+    "UserAlarmVoice": {
+      "shape": "array",
+      "nativeKey": "alarmVoice",
+      "dispatch": "0x27f890c"
+    },
+    "UserAlarmVoiceItem": {
+      "shape": "array",
+      "nativeKey": "alarmVoiceItem",
+      "dispatch": "0x27f8ab8"
+    },
+    "UserArea": {
+      "shape": "array",
+      "nativeKey": "area",
+      "dispatch": "0x27f47fc"
+    },
+    "UserAreaFlag": {
+      "shape": "array",
+      "nativeKey": "areaFlag",
+      "dispatch": "0x27f49b8"
+    },
+    "UserCasinoMedalProduct": {
+      "shape": "array",
+      "nativeKey": "casinoMedalProduct",
+      "dispatch": "0x27f9878"
+    },
+    "UserCasinoMedalRate": {
+      "shape": "array",
+      "nativeKey": "casinoMedalRate",
+      "dispatch": "0x27f9720"
+    },
+    "UserCasinoState": {
+      "shape": "object",
+      "nativeKey": "casinoState",
+      "dispatch": "0x27f96f8"
+    },
+    "UserCharacter": {
+      "shape": "array",
+      "nativeKey": "character",
+      "dispatch": "0x27f5108"
+    },
+    "UserCharacterCostume": {
+      "shape": "array",
+      "nativeKey": "characterCostume",
+      "dispatch": "0x27f53a8"
+    },
+    "UserCharacterFriendshipReward": {
+      "shape": "array",
+      "nativeKey": "characterFriendshipReward",
+      "dispatch": "0x27f554c"
+    },
+    "UserCharacterPresentApplicationInfo": {
+      "shape": "array",
+      "nativeKey": "characterPresentApplicationInfo",
+      "dispatch": "0x27fb5e0"
+    },
+    "UserCharacterPresentCharacterInfo": {
+      "shape": "array",
+      "nativeKey": "characterPresentCharacterInfo",
+      "dispatch": "0x27fb41c"
+    },
+    "UserCharacterPresentCharacterReward": {
+      "shape": "array",
+      "nativeKey": "characterPresentCharacterReward",
+      "dispatch": "0x27fb950"
+    },
+    "UserComeBackAdventure": {
+      "shape": "array",
+      "nativeKey": "comeBackAdventure",
+      "dispatch": "0x27f84f0"
+    },
+    "UserCommunicationCharacter": {
+      "shape": "array",
+      "nativeKey": "communicationCharacter",
+      "dispatch": "0x27f5258"
+    },
+    "UserCommunicationVoice": {
+      "shape": "array",
+      "nativeKey": "communicationVoice",
+      "dispatch": "0x27f6380"
+    },
+    "UserCpItem": {
+      "shape": "array",
+      "nativeKey": "cpItem",
+      "dispatch": "0x27f7bc4"
+    },
+    "UserCurrency": {
+      "shape": "array",
+      "nativeKey": "currency",
+      "dispatch": "0x27f2b70"
+    },
+    "UserDpItem": {
+      "shape": "array",
+      "nativeKey": "dpItem",
+      "dispatch": "0x27fdf70"
+    },
+    "UserElementEventRecord": {
+      "shape": "array",
+      "nativeKey": "elementEventRecords",
+      "dispatch": "0x27fc080"
+    },
+    "UserEnemySpecie": {
+      "shape": "array",
+      "nativeKey": "enemySpecie",
+      "dispatch": "0x27f31ec"
+    },
+    "UserEpisodeDifficulty": {
+      "shape": "array",
+      "nativeKey": "episodeDifficulty",
+      "dispatch": "0x27f693c"
+    },
+    "UserEquipment": {
+      "shape": "array",
+      "nativeKey": "equipmentInventory",
+      "dispatch": "0x27f6e0c"
+    },
+    "UserEquipmentEnhanceItem": {
+      "shape": "array",
+      "nativeKey": "equipmentEnhanceItem",
+      "dispatch": "0x27fa174"
+    },
+    "UserEquipmentEvolveItem": {
+      "shape": "array",
+      "nativeKey": "equipmentEvolveItem",
+      "dispatch": "0x27fa2cc"
+    },
+    "UserEquipmentMaterial": {
+      "shape": "array",
+      "nativeKey": "equipmentMaterial",
+      "dispatch": "0x27f727c"
+    },
+    "UserEquipmentRecipeState": {
+      "shape": "array",
+      "nativeKey": "equipmentRecipe",
+      "dispatch": "0x27f6f64"
+    },
+    "UserEquipmentShopProduct": {
+      "shape": "array",
+      "nativeKey": "equipmentShopProduct",
+      "dispatch": "0x27f7124"
+    },
+    "UserEventBox": {
+      "shape": "array",
+      "nativeKey": "eventBox",
+      "dispatch": "0x27f73d4"
+    },
+    "UserEventBoxContent": {
+      "shape": "array",
+      "nativeKey": "eventBoxContent",
+      "dispatch": "0x27f7594"
+    },
+    "UserEventBoxStep": {
+      "shape": "array",
+      "nativeKey": "eventBoxStep",
+      "dispatch": "0x27f7a6c"
+    },
+    "UserEventItem": {
+      "shape": "array",
+      "nativeKey": "eventItem",
+      "dispatch": "0x27f4364"
+    },
+    "UserExpItem": {
+      "shape": "array",
+      "nativeKey": "expItem",
+      "dispatch": "0x27f3a34"
+    },
+    "UserExpeditionInfo": {
+      "shape": "object",
+      "nativeKey": "expeditionInfo",
+      "dispatch": "0x27f9e9c"
+    },
+    "UserExpeditionParty": {
+      "shape": "array",
+      "nativeKey": "expeditionParty",
+      "dispatch": "0x27f9cd4"
+    },
+    "UserExpeditionStage": {
+      "shape": "array",
+      "nativeKey": "expeditionStage",
+      "dispatch": "0x27f9b7c"
+    },
+    "UserExplorerMember": {
+      "shape": "object",
+      "nativeKey": "explorerMember",
+      "dispatch": "0x27f6ca0"
+    },
+    "UserExplorerPlayFloor": {
+      "shape": "array",
+      "nativeKey": "explorerPlayFloor",
+      "dispatch": "0x27f8340"
+    },
+    "UserExplorerState": {
+      "shape": "array",
+      "nativeKey": "explorerStates",
+      "dispatch": "0x27f6cb4"
+    },
+    "UserFamiliaDonationItem": {
+      "shape": "array",
+      "nativeKey": "familiaDonationItem",
+      "dispatch": "0x27fb16c"
+    },
+    "UserFamiliaValisDonation": {
+      "shape": "array",
+      "nativeKey": "familiaValisDonation",
+      "dispatch": "0x27fafac"
+    },
+    "UserFriendStatus": {
+      "shape": "array",
+      "nativeKey": "friendStatus",
+      "dispatch": "0x27f7d1c"
+    },
+    "UserGachaTicket": {
+      "shape": "array",
+      "nativeKey": "gachaTicket",
+      "dispatch": "0x27f3e24"
+    },
+    "UserGameManual": {
+      "shape": "array",
+      "nativeKey": "gameManual",
+      "dispatch": "0x27f59fc"
+    },
+    "UserGeneralLimitBreakItem": {
+      "shape": "array",
+      "nativeKey": "generalLimitBreakItem",
+      "dispatch": "0x27f6524"
+    },
+    "UserGift": {
+      "shape": "array",
+      "nativeKey": "gift",
+      "dispatch": "0x27f2e08"
+    },
+    "UserGuestEvent": {
+      "shape": "array",
+      "nativeKey": "userGuestEvent",
+      "dispatch": "0x27f99d0"
+    },
+    "UserGuildEventStaminas": {
+      "shape": "object",
+      "nativeKey": "guildEventStaminas",
+      "dispatch": "0x27fc69c"
+    },
+    "UserGuildRaidRecord": {
+      "shape": "array",
+      "nativeKey": "guildRaidRecord",
+      "dispatch": "0x27fbc64"
+    },
+    "UserGuildRaidState": {
+      "shape": "object",
+      "nativeKey": "guildRaidState",
+      "dispatch": "0x27fbdbc"
+    },
+    "UserGvEHighScoreParty": {
+      "shape": "array",
+      "nativeKey": "gveHighScoreParty",
+      "dispatch": "0x27fa01c"
+    },
+    "UserGvEParty": {
+      "shape": "object",
+      "nativeKey": "gveParty",
+      "dispatch": "0x27f9eb0"
+    },
+    "UserGvERecord": {
+      "shape": "array",
+      "nativeKey": "gveRecord",
+      "dispatch": "0x27f9ec4"
+    },
+    "UserHeroSublimateItem": {
+      "shape": "array",
+      "nativeKey": "heroSublimateItem",
+      "dispatch": "0x27fbdd0"
+    },
+    "UserHeroSublimateUnlockItem": {
+      "shape": "array",
+      "nativeKey": "heroSublimateUnlockItem",
+      "dispatch": "0x27fbf28"
+    },
+    "UserInfo": {
+      "shape": "object",
+      "nativeKey": "info",
+      "dispatch": "0x27f297c"
+    },
+    "UserItemToken": {
+      "shape": "array",
+      "nativeKey": "itemToken",
+      "dispatch": "0x27f30a0"
+    },
+    "UserKeyItem": {
+      "shape": "array",
+      "nativeKey": "keyItem",
+      "dispatch": "0x27f38e4"
+    },
+    "UserLimitBreakItem": {
+      "shape": "array",
+      "nativeKey": "limitBreakItem",
+      "dispatch": "0x27f4214"
+    },
+    "UserLocation": {
+      "shape": "array",
+      "nativeKey": "location",
+      "dispatch": "0x27f44b4"
+    },
+    "UserLocationFlag": {
+      "shape": "array",
+      "nativeKey": "locationFlag",
+      "dispatch": "0x27f4658"
+    },
+    "UserLockAbilityItem": {
+      "shape": "array",
+      "nativeKey": "lockAbilityItem",
+      "dispatch": "0x27fe0c8"
+    },
+    "UserLoginBonus": {
+      "shape": "array",
+      "nativeKey": "loginBonus",
+      "dispatch": "0x27f5f28"
+    },
+    "UserLoginBonusExplorer": {
+      "shape": "array",
+      "nativeKey": "loginBonusExplorer",
+      "dispatch": "0x27fe220"
+    },
+    "UserLoginBonusExplorerProgress": {
+      "shape": "array",
+      "nativeKey": "loginBonusExplorerProgress",
+      "dispatch": "0x27fe378"
+    },
+    "UserLoginBonusProgress": {
+      "shape": "array",
+      "nativeKey": "loginBonusProgress",
+      "dispatch": "0x27f6078"
+    },
+    "UserLottery": {
+      "shape": "array",
+      "nativeKey": "lottery",
+      "dispatch": "0x27f33a4"
+    },
+    "UserMapEventInfoList": {
+      "shape": "array",
+      "nativeKey": "mapEventInfoList",
+      "dispatch": "0x27fcae0"
+    },
+    "UserMaterial": {
+      "shape": "array",
+      "nativeKey": "material",
+      "dispatch": "0x27f3794"
+    },
+    "UserMemoria": {
+      "shape": "array",
+      "nativeKey": "memoria",
+      "dispatch": "0x27fd388"
+    },
+    "UserMemoriaExpItem": {
+      "shape": "array",
+      "nativeKey": "memoriaExpItem",
+      "dispatch": "0x27fd548"
+    },
+    "UserNotice": {
+      "shape": "array",
+      "nativeKey": "notice",
+      "dispatch": "0x27f2cbc"
+    },
+    "UserOtherParty": {
+      "shape": "array",
+      "nativeKey": "otherParty",
+      "dispatch": "0x27fbb14"
+    },
+    "UserPC": {
+      "shape": "array",
+      "nativeKey": "pc",
+      "dispatch": "0x27f34f4"
+    },
+    "UserPCJobSet": {
+      "shape": "array",
+      "nativeKey": "pcJobSet",
+      "dispatch": "0x27f6ae0"
+    },
+    "UserPCTicket": {
+      "shape": "array",
+      "nativeKey": "pcTicket",
+      "dispatch": "0x27f3f74"
+    },
+    "UserParty": {
+      "shape": "array",
+      "nativeKey": "party",
+      "dispatch": "0x27f3644"
+    },
+    "UserPartyPreset": {
+      "shape": "array",
+      "nativeKey": "partyPreset",
+      "dispatch": "0x27fd230"
+    },
+    "UserPokerState": {
+      "shape": "object",
+      "nativeKey": "pokerState",
+      "dispatch": "0x27f970c"
+    },
+    "UserProfile": {
+      "shape": "object",
+      "nativeKey": "profile",
+      "dispatch": "0x27f6928"
+    },
+    "UserPvBHighScoreParty": {
+      "shape": "object",
+      "nativeKey": "pvbHighScoreParty",
+      "dispatch": "0x27f8ed4"
+    },
+    "UserPvBParty": {
+      "shape": "object",
+      "nativeKey": "pvbParty",
+      "dispatch": "0x27f8c10"
+    },
+    "UserPvBRecord": {
+      "shape": "array",
+      "nativeKey": "pvbRecord",
+      "dispatch": "0x27f8c24"
+    },
+    "UserPvPParty": {
+      "shape": "object",
+      "nativeKey": "pvpParty",
+      "dispatch": "0x27f6674"
+    },
+    "UserPvPRecord": {
+      "shape": "array",
+      "nativeKey": "pvpRecord",
+      "dispatch": "0x27f6688"
+    },
+    "UserQrCodeItem": {
+      "shape": "array",
+      "nativeKey": "qrCodeItem",
+      "dispatch": "0x27fb2c4"
+    },
+    "UserRandomSeed": {
+      "shape": "array",
+      "nativeKey": "randomSeed",
+      "dispatch": "0x27f2f54"
+    },
+    "UserScratch": {
+      "shape": "array",
+      "nativeKey": "scratch",
+      "dispatch": "0x27f8648"
+    },
+    "UserScratchContent": {
+      "shape": "array",
+      "nativeKey": "scratchContent",
+      "dispatch": "0x27f87a0"
+    },
+    "UserSerialPvpGameStatus": {
+      "shape": "array",
+      "nativeKey": "serialPvpGameStatus",
+      "dispatch": "0x27febf0"
+    },
+    "UserSerialPvpInfo": {
+      "shape": "object",
+      "nativeKey": "serialPvpInfo",
+      "dispatch": "0x27faf98"
+    },
+    "UserSerialPvpRecord": {
+      "shape": "array",
+      "nativeKey": "serialPvpRecord",
+      "dispatch": "0x27fed48"
+    },
+    "UserSerialPvpSpTicketItem": {
+      "shape": "array",
+      "nativeKey": "serialPvpSpTicketItem",
+      "dispatch": "0x27feff8"
+    },
+    "UserSerialPvpUsingLimitData": {
+      "shape": "array",
+      "nativeKey": "serialPvpUsingLimitData",
+      "dispatch": "0x27feea0"
+    },
+    "UserShootingGame": {
+      "shape": "array",
+      "nativeKey": "shootingGameInfo",
+      "dispatch": "0x27fc6b0"
+    },
+    "UserShootingGameRankingReward": {
+      "shape": "object",
+      "nativeKey": "shootingGameRankingReward",
+      "dispatch": "0x27fc808"
+    },
+    "UserShop": {
+      "shape": "array",
+      "nativeKey": "shop",
+      "dispatch": "0x27f5708"
+    },
+    "UserShopProduct": {
+      "shape": "array",
+      "nativeKey": "shopProduct",
+      "dispatch": "0x27f58ac"
+    },
+    "UserSkipTicket": {
+      "shape": "array",
+      "nativeKey": "skipTicket",
+      "dispatch": "0x27fc81c"
+    },
+    "UserStaminaTicket": {
+      "shape": "array",
+      "nativeKey": "staminaTicket",
+      "dispatch": "0x27f3cd4"
+    },
+    "UserStartNovel": {
+      "shape": "array",
+      "nativeKey": "startNovel",
+      "dispatch": "0x27f7e74"
+    },
+    "UserStatus": {
+      "shape": "object",
+      "nativeKey": "status",
+      "dispatch": "0x27f5ba0"
+    },
+    "UserStatusBoardItem": {
+      "shape": "array",
+      "nativeKey": "statusBoardItem",
+      "dispatch": "0x27f3b84"
+    },
+    "UserSubscriptionBonus": {
+      "shape": "array",
+      "nativeKey": "subscriptionBonus",
+      "dispatch": "0x27fd7f8"
+    },
+    "UserSubscriptionExtendBonus": {
+      "shape": "array",
+      "nativeKey": "subscriptionExtendBonus",
+      "dispatch": "0x27fd6a0"
+    },
+    "UserSubscriptionFreeTrialEndAlert": {
+      "shape": "array",
+      "nativeKey": "subscriptionFreeTrialEndAlert",
+      "dispatch": "0x27fd950"
+    },
+    "UserSubscriptionTicket": {
+      "shape": "array",
+      "nativeKey": "subscriptionTicket",
+      "dispatch": "0x27fd0d8"
+    },
+    "UserSystemFlag": {
+      "shape": "array",
+      "nativeKey": "systemFlag",
+      "dispatch": "0x27f29bc"
+    },
+    "UserTakarakujiInfo": {
+      "shape": "array",
+      "nativeKey": "takarakujiInfo",
+      "dispatch": "0x27f8ee8"
+    },
+    "UserTakarakujiresultState": {
+      "shape": "array",
+      "nativeKey": "takarakujiresultState",
+      "dispatch": "0x27f9098"
+    },
+    "UserTicket": {
+      "shape": "array",
+      "nativeKey": "ticket",
+      "dispatch": "0x27f67d8"
+    },
+    "UserTitleBadge": {
+      "shape": "array",
+      "nativeKey": "titleBadge",
+      "dispatch": "0x27fcc90"
+    },
+    "UserTownCommunication": {
+      "shape": "array",
+      "nativeKey": "townCommunication",
+      "dispatch": "0x27f5bc8"
+    },
+    "UserTownCommunicationAis": {
+      "shape": "array",
+      "nativeKey": "townCommunicationAis",
+      "dispatch": "0x27f76ec"
+    },
+    "UserTownCommunicationLef": {
+      "shape": "array",
+      "nativeKey": "townCommunicationLef",
+      "dispatch": "0x27f78ac"
+    },
+    "UserTutorial": {
+      "shape": "array",
+      "nativeKey": "tutorial",
+      "dispatch": "0x27f5d80"
+    },
+    "UserUnderPvPGameStatus": {
+      "shape": "array",
+      "nativeKey": "underPvpGameStatus",
+      "dispatch": "0x27fcf80"
+    },
+    "UserUnderPvPInfo": {
+      "shape": "object",
+      "nativeKey": "underPvpInfo",
+      "dispatch": "0x27fc974"
+    },
+    "UserUnderPvPRecord": {
+      "shape": "array",
+      "nativeKey": "underPvpRecord",
+      "dispatch": "0x27fc988"
+    },
+    "UserUnderPvpRevengeStatus": {
+      "shape": "array",
+      "nativeKey": "underPvpRevengeStatus",
+      "dispatch": "0x27fdafc"
+    },
+    "UserUnderPvpRevengeTicket": {
+      "shape": "array",
+      "nativeKey": "underPvpRevengeTicket",
+      "dispatch": "0x27fdc54"
+    },
+    "UserUnderPvpStaminaTicket": {
+      "shape": "array",
+      "nativeKey": "underPvpStaminaTicket",
+      "dispatch": "0x27fce28"
+    },
+    "UserUnionRaidBossSpTicketItem": {
+      "shape": "array",
+      "nativeKey": "unionRaidBossSpTicketItem",
+      "dispatch": "0x27fe690"
+    },
+    "UserUnionRaidChatComment": {
+      "shape": "array",
+      "nativeKey": "unionRaidChatComment",
+      "dispatch": "0x27fe940"
+    },
+    "UserUnionRaidInformation": {
+      "shape": "array",
+      "nativeKey": "unionRaidInformation",
+      "dispatch": "0x27fea98"
+    },
+    "UserUnionRaidMedal": {
+      "shape": "array",
+      "nativeKey": "unionRaidMedal",
+      "dispatch": "0x27fe538"
+    },
+    "UserUnionRaidNormalSpTicketItem": {
+      "shape": "array",
+      "nativeKey": "unionRaidNormalSpTicketItem",
+      "dispatch": "0x27fe7e8"
+    },
+    "UserVoiceFireBolt": {
+      "shape": "array",
+      "nativeKey": "voiceFireBolt",
+      "dispatch": "0x27fddac"
+    },
+    "UserVoteInfo": {
+      "shape": "array",
+      "nativeKey": "voteInfo",
+      "dispatch": "0x27f817c"
+    },
+    "UserVoteItem": {
+      "shape": "array",
+      "nativeKey": "voteItem",
+      "dispatch": "0x27f8024"
+    },
+    "UserWritableLotteryData": {
+      "shape": "array",
+      "nativeKey": "writableLotteryData",
+      "dispatch": "0x27f8d7c"
+    }
+  }
+}
